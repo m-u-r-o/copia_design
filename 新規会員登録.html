@@ -5,7 +5,7 @@
 	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Copia - 編集フォーム</title>
+	<title>Copia - 新規会員登録</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	<meta name="viewport" content="width=device-width" />
@@ -23,51 +23,16 @@
 </head>
 
 <body>
-    <!-- navbar サンプル1 -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
- 
-        <!--ナビゲーションバーを水平方向に配置-->
-        <div class="container">
-
-        <!--ブランド名・ロゴを入れる-->
-        <a class="navbar-brand" href="#">Copia</a>  
-    
-            <!--レスポンシブの際のハンバーガーメニューのボタン-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <!--ナビバー内のメニュー-->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- ハンバーガーメニューのボタンを動かすためには、
-           　　　上記id="navbarSupportedContent"部分と<button>内に記述のある
-           　　　data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-           　　　部分を一緒にする必要があります。-->
-            
-                <!--ナビバー内の検索フォーム-->
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control ml-sm-5 mr-sm-2" type="text" placeholder="Search" aria-label="検索">
-                    <button class="btn btn-success btn-round" type="submit">検索</button>
-                </form>
-
-                <ul class="navbar-nav ml-auto">       
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><i class="fas fa-home" aria-hidden="true"></i>&nbsp;TOP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="far fa-comments" aria-hidden="true"></i>&nbsp;チャット</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="far fa-thumbs-up" aria-hidden="true"></i>&nbsp;NICE</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="#" target="_blank" class="btn btn-warning btn-round">出品する</a>
-                    </li>
-                </ul>
-
+     <header class="footer bg-primary text-white">
+        <div class="container text-center">
+            <div class="mx-auto my-auto">
+                <br />
+                <h1>Copia</h1>
+                <h4>新規会員登録</h4>
+                <br />
             </div>
         </div>
-    </nav>
+    </header>
 
     <!--パンくずリスト-->
 
@@ -125,9 +90,21 @@
         <input type="Email" class="form-control" id="Email" placeholder="xxxx@copia.jp">
     </div>
 
+    <!-- パスワード入力 -->
+     <div class="form-group col-md-6">
+        <label for="Password">パスワード</label>
+        <input type="Password" class="form-control" id="Password" placeholder="パスワードを入力">
+    </div>
+
+    <!-- パスワード入力確認 -->
+    <div class="form-group col-md-6">
+        <label for="Passwordcheck">パスワード（確認）</label>
+        <input type="Passwordcheck" class="form-control" id="Passwordcheck" placeholder="もう一度パスワードを入力">
+    </div>
+
         <!-- ボタン -->
         <div class="mx-3">
-            <button type="submit" class="btn btn-primary">変更</button>
+            <button type="submit" class="btn btn-primary">新規登録</button>
         </div>
     </form>
     <br />
