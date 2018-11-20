@@ -39,9 +39,9 @@
                         <form class="register-form">
 
                             <!-- ユーザー名入力 -->
-                            <label class="text-dark">ユーザー名</label>
                             <div class="form-group col-md-15">
-                                <input type="username" class="form-control" id="username" placeholder="ユーザー名を入力">
+                                <label class="text-dark">ユーザー名</label>
+                                <input type="username" class="form-control" id="username" placeholder="Copiaユーザー">
                             </div>
 
                             <!--　氏名入力　-->
@@ -53,108 +53,148 @@
                                 <div class="form-group col-md-6">
                                     <label class="text-dark">名</label>
                                     <input type="text" class="form-control" id="lastname" placeholder="太郎">
+                                </div>
                             </div>
-            
-
-
-
-
-
-
-
-
-                            <label class="text-dark">パスワード</label>
-                            <div class="input-group form-group-no-border">
-                                <span class="input-group-addon">
-                                    <i class="nc-icon nc-key-25"></i>
-                                </span>
-                                <input type="text" class="form-control-info" placeholder="Password">
+                            
+                            <!-- 性別入力 -->
+                            <div class="form-row">
+                                <div class="form-group col-md-3">
+                                        <input type="radio" name="gender">
+                                        <label class="text-dark">男性</label>
+                                </div>      
+                                <div class="form-group col-md-3">
+                                        <input type="radio"name="gender">
+                                        <label class="text-dark">女性</label>
+                                </div>
                             </div>
 
-                            <button class="btn btn-info btn-block btn-round">新規登録</button>
+                            <!-- 誕生日入力 -->
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label class="text-dark">西暦</label>
+                                    <input type="text" class="form-control" name="a" list="year" placeholder="2018" autocomplete="off">
+                                    <datalist id="year">
+                                        <option value="2018">
+                                        <option value="2017">
+                                        <option value="2016">
+                                        <option value="2015">
+                                        <option value="2014">
+                                        <option value="2013">
+                                        <option value="2012">
+                                        <option value="2011">
+                                        <option value="2010">
+                                        <option value="2009">
+                                        <option value="2008">
+                                        <option value="2007">
+                                        <option value="2006">
+                                        <option value="2005">
+                                        <option value="2004">
+                                        <option value="2003">
+                                        <option value="2002">
+                                        <option value="2001">
+                                        <option value="2000">
+                                        <option value="1999">
+                                        <option value="1998">
+                                        <option value="1997">
+                                        <option value="1996">
+                                        <option value="1995">
+                                        <option value="1994">
+                                        <option value="1993">
+                                        <option value="1992">
+                                        <option value="1991">
+                                        <option value="1990">
+                                        <option value="1989">
+                                        <option value="1988"> 
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label class="text-dark">月</label>
+                                    <input type="text" class="form-control" name="a" list="month" placeholder="01" autocomplete="off">
+                                    <datalist id="month">
+                                        <option value="01">
+                                        <option value="02">
+                                        <option value="03">
+                                        <option value="04">
+                                        <option value="05">
+                                        <option value="06">
+                                        <option value="07">
+                                        <option value="08">
+                                        <option value="09">
+                                        <option value="10">
+                                        <option value="11">
+                                        <option value="12">
+                                    </datalist> 
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label class="text-dark">日</label>
+                                    <input type="text" class="form-control" name="a" list="day" placeholder="01" autocomplete="off">
+                                    <datalist id="day">
+                                        <option value="01">
+                                        <option value="02">
+                                        <option value="03">
+                                        <option value="04">
+                                        <option value="05">
+                                        <option value="06">
+                                        <option value="07">
+                                        <option value="08">
+                                        <option value="09">
+                                        <option value="10">
+                                        <option value="11">
+                                        <option value="12">
+                                        <option value="13">
+                                        <option value="14">
+                                        <option value="15">
+                                        <option value="16">
+                                        <option value="17">
+                                        <option value="18">
+                                        <option value="19">
+                                        <option value="20">
+                                        <option value="21">
+                                        <option value="22">
+                                        <option value="23">
+                                        <option value="24">
+                                        <option value="25">
+                                        <option value="26">
+                                        <option value="27">
+                                        <option value="28">
+                                        <option value="29">
+                                        <option value="30">
+                                        <option value="31">
+                                    </datalist>
+                                </div>
+                            </div>
+
+                            <!-- メールアドレス入力 -->
+                            <div class="form-group col-md-15">
+                                <label class="text-dark">メールアドレス</label>                                
+                                <input type="Email" class="form-control" id="Email" placeholder="xxxx@copia.jp">
+                            </div>
+
+                            <!-- パスワード入力 -->
+                            <div class="form-group col-md-15">
+                                <label class="text-dark">パスワード</label>                                
+                                <input type="Password" class="form-control" id="Password" placeholder="パスワードを入力">
+                            </div>
+
+                            <!-- パスワード入力確認 -->
+                            <div class="form-group col-md-15">
+                                <label class="text-dark">パスワード（確認）</label>                               
+                                <input type="Passwordcheck" class="form-control" id="Passwordcheck" placeholder="もう一度パスワードを入力">
+                            </div>
+
+                            <div class="forgot">
+                                    <input type="checkbox">
+                                    <label class="text-dark"><a href="#">利用規約</a>に同意する</label>
+                            </div>
+                            
+                            <button class="btn btn-info btn-block btn-round">新規会員登録</button>
+
                         </form>
-                        <div class="forgot">
-                                <a href="#" class="btn btn-link btn-info">パスワードをお忘れの方はこちら</a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-</body>
-
-<body>
-
-    <form>
-        <div class="mt-5">
-            <!-- ユーザー名入力 -->
-            <div class="form-group col-md-6">
-                <label for="username">ユーザー名</label>
-                <input type="username" class="form-control" id="username" placeholder="ユーザー名を入力">
-            </div>
-
-            <!--　氏名入力　-->
-            <div class="ml-3">
-                <div class="form-row">
-                    <div class="form-group col-md-3">
-                        <label for="firstname">姓</label>
-                        <input type="text" class="form-control" id="firstname" placeholder="蒲田">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="lastname">名</label>
-                        <input type="text" class="form-control" id="lastname" placeholder="太郎">
-                    </div>
-                </div>
-
-                <!-- 性別入力 -->
-                <div class="form-check">
-                    <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="mens" id="mens1" value="men1" checked>男性</label>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="womens" id="women2" value="women2"　checked>女性</label>
-                </div>
-    
-                <!-- 誕生日入力 -->
-                <div class="form-row">
-                    <div class="form-group col-md-1">
-                        <label for="birthday">西暦</label>
-                        <input type="text" class="form-control" id="birthday1">  
-                    </div>
-                    <div class="form-group col-md-1">
-                        <label for="birthday">月</label>
-                        <input type="text" class="form-control" id="birthday2">  
-                    </div>
-                    <div class="form-group col-md-1">
-                        <label for="birthday">日</label>
-                        <input type="text" class="form-control" id="birthday3">  
-                    </div>
-                </div>
-            </div>
-            <!-- メールアドレス入力 -->
-            <div class="form-group col-md-6">
-                <label for="Email">メールアドレス</label>
-                <input type="Email" class="form-control" id="Email" placeholder="xxxx@copia.jp">
-            </div>
-            <!-- パスワード入力 -->
-            <div class="form-group col-md-6">
-                <label for="Password">パスワード</label>
-                <input type="Password" class="form-control" id="Password" placeholder="パスワードを入力">
-            </div>
-            <!-- パスワード入力確認 -->
-            <div class="form-group col-md-6">
-                <label for="Passwordcheck">パスワード（確認）</label>
-                <input type="Passwordcheck" class="form-control" id="Passwordcheck" placeholder="もう一度パスワードを入力">
-            </div>
-            <!-- ボタン -->
-            <div class="mx-3">
-                <button type="submit" class="btn btn-primary">新規登録</button>
-            </div>
-    </form>
-    <br />
-    <br />
 
     <!-- フッター -->
     <footer class="footer bg-primary text-white">
